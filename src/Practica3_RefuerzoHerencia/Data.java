@@ -1,4 +1,4 @@
-package RefuerzoHerencia;
+package Practica3_RefuerzoHerencia;
 
 /**
  * Created by vitaly94 on 28/09/2016.

@@ -1,4 +1,4 @@
-package Practica2;
+package Practica2_Garbage;
 
 /**
  * Created by vitaly94 on 23/09/2016.

@@ -1,4 +1,4 @@
-package Practica1;
+package Practica1_DeclaracionClases;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

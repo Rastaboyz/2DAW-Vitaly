@@ -1,7 +1,6 @@
-package Practica1;
+package Practica1_DeclaracionClases;
 
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * Created by vitaly94 on 22/09/2016.

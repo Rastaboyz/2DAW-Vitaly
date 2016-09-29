@@ -1,4 +1,4 @@
-package Practica3_Herencia;
+package Practica4_Herencia;
 
 /**
  * Created by vitaly94 on 29/09/2016.

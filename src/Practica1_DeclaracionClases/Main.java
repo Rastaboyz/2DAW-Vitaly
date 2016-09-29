@@ -1,4 +1,4 @@
-package Practica1;
+package Practica1_DeclaracionClases;
 
 /**
  * Created by vitaly94 on 22/09/2016.
