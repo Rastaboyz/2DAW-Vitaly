@@ -5,7 +5,7 @@ package Practica6_Interfaz;
  */
 public class Primaria extends Docente {
     @Override
-    public void pagaAlTreballador(Trabajador trabajador) {
-        super.pagaAlTreballador(trabajador);
+    public String GetCcc() {
+        return super.GetCcc();
     }
 }

@@ -9,13 +9,10 @@ import java.awt.*;
  */
 public class Main {
     public static void main (String[] args){
-        Cercle c = new Cercle();
+        /*Cercle c = new Cercle();
         c.setRadi("4,4");
         c.setCodi(1);
         c.setColor(Color.green);
-        c.setNom("Circulito");
-
-
-
+        c.setNom("Circulito");*/
     }
 }
