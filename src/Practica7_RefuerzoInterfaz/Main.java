@@ -7,6 +7,8 @@ public class Main {
     public static void main (String[] args){
         Student student = new Student();
 
+        /*Siendo "database" la interfaz principal/general y el resto de las clases
+         * implementan de ella, es posible usar cualquier clase implementada desde la interfaz. */
         Database db1 = new MetodoMiguel();
         Database db2 = new MetodoPep();
 
