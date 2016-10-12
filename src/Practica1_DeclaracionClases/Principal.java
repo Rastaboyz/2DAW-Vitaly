@@ -24,26 +24,29 @@ public class Principal {
         //Averiguar el día de la Cita
         System.out.println("Especifica dd-mm-aaaa de la cita");
         Scanner sc = new Scanner(System.in);
-        fechaCita = sc.next(); //Lectura del teclado por consola.
+        fechaCita = sc.next();
         String[] fechaAnalizada = analizarFecha(fechaCita);
+        String[] arrayFechaCita = fechaCita.split("-");
 
         //Comprobar que la fecha introducida es de formato correcto.
         try {
             if (fechaAnalizada != null) {
-                int dia = Integer.parseInt(fechaAnalizada[0]);
-                int mes = Integer.parseInt(fechaAnalizada[1]);
+                int dia = Integer.parseInt(arrayFechaCita[0]);
+                int mes = Integer.parseInt(arrayFechaCita[1]);
                 boolean esFestivo = festivo(fechaAnalizada[0]);
                 Pagina pagina = new Pagina(dia, mes, esFestivo);
                 List<Pagina> paginas  = new ArrayList<>(); //Inicialización temporal de la lista.
                 paginas.add(pagina);
                 Agenda agenda = new Agenda(Integer.parseInt(fechaAnalizada[2]), paginas);
 
-                if (esFestivo) {
-                    /*String[] fecha = fechaCita.split("-");
-                    int dia = Integer.parseInt(fecha[0]);
-                    int mes = Integer.parseInt(fecha[1]);*/
-
-                    //Revisar
+                if (!esFestivo) {
+                    System.out.println("Escribe la hora de la cita:");
+                    int horaInicio = sc.nextInt();
+                    System.out.println("Escribe el motivo de la cita");
+                    String motivo = sc.next();
+                    System.out.println("La cita ha sido programada para 1h");
+                    int horaFin = horaInicio + 1;
+                    Cita cita = new Cita(horaInicio, horaFin, motivo);
                 }else{
                     System.out.println("La fecha elegida es un día festivo");
                 }
