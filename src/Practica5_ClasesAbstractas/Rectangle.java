@@ -10,8 +10,8 @@ public class Rectangle extends FiguraGeometrica {
       if (naltura>0) altura=naltura;
    }
 
-   public Rectangle() {
-   }
+   //public Rectangle() {
+   //}
    
    public Rectangle (Rectangle r) {
       this (r.codi, r.nom, r.color, r.base, r.altura);
@@ -44,7 +44,7 @@ public class Rectangle extends FiguraGeometrica {
    public void visualitzar () {
       System.out.println ("S�c un rectangle");
       System.out.println ("****************");
-      super.visualitzar();
+      //super.visualitzar();
       System.out.println ("Base..........:" + base);
       System.out.println ("Altura........:" + altura);
       System.out.println ("Per�metre.....:" + perimetre());

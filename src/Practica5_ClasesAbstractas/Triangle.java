@@ -10,8 +10,8 @@ public class Triangle extends FiguraGeometrica {
       if (naltura>0) altura=naltura;
    }
 
-   public Triangle() {
-   }
+   //public Triangle() {
+   //}
    
    public Triangle (Triangle r) {
       this (r.codi, r.nom, r.color, r.base, r.altura);
@@ -40,7 +40,7 @@ public class Triangle extends FiguraGeometrica {
    public void visualitzar () {
       System.out.println ("S�c un triangle");
       System.out.println ("***************");
-      super.visualitzar();
+      //super.visualitzar();
       System.out.println ("Base..........:" + base);
       System.out.println ("Altura........:" + altura);
       System.out.println ("�rea..........:" + area());
