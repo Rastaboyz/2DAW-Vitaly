@@ -7,9 +7,12 @@ import java.util.List;
  */
 public class Main_TraditionalLog {
     public static void main(String[] args) {
+        // Delegamos las responsabilidades del "log" en una entidad externa llamada "Log".
 
-        //Delegam les responsabilitats del log
-        // en una entitat externa --> Log
+        // Con esto se define que se mostrarán los logs por consola, en caso de que querramos
+        // que muestre por archivo, simplemente haría falta modificar por la clase "LogFile" y
+        // si se quiere usar para alguna otra forma, se ha de crear la clase extendiendo de la
+        // clase "LogAbstract". Una vez preparado, se inicializa la clase (new LogXXX).
         Log log = new LogConsole();
         log.setLogError(true);
         log.setLogInfo(true);

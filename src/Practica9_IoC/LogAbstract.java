@@ -4,6 +4,8 @@ package Practica9_IoC;
  * Created by vitaly94 on 14/10/2016.
  */
 public abstract class LogAbstract implements Log {
+    /* Clase que obtiene los métodos de la interfaz LOG. Esta clase es usada para que las
+    demás clases puedan interactuar con estos métodos */
     private boolean logError;
     private boolean logWarn;
     private boolean logInfo;

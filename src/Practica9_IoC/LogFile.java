@@ -8,6 +8,7 @@ import java.io.UnsupportedEncodingException;
  * Created by vitaly94 on 14/10/2016.
  */
 public class LogFile extends LogAbstract {
+    /* IoC - La clase que hace funcion de Log por ficheros. Obtiene los métodos de la clase abstracta "LogAbstract". */
     public void logInfo(String textToLog) {
         if (isLogInfo()) {
             writeFile(INFO_PREFIX + textToLog);
