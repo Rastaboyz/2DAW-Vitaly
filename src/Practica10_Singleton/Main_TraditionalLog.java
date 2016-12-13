@@ -9,19 +9,19 @@ public class Main_TraditionalLog {
     public static void main(String[] args) {
 
         //Instancias de Singleton
-        LogFile.getInstance().setLogError(true);
-        LogFile.getInstance().setLogInfo(true);
-        LogFile.getInstance().setLogWarn(true);
+        LogFile.ThreadSave().setLogError(true);
+        LogFile.ThreadSave().setLogInfo(true);
+        LogFile.ThreadSave().setLogWarn(true);
 
         List<String> list = null;
 
-        if (list == null) LogFile.getInstance().logWarn("LLista nula");
+        if (list == null) LogFile.ThreadSave().logWarn("LLista nula");
 
         try {
-            LogFile.getInstance().logInfo("Anem a afegir un element.");
+            LogFile.ThreadSave().logInfo("Anem a afegir un element.");
             list.add("Element");
         } catch (NullPointerException npe){
-            LogFile.getInstance().logError(" excepcio:" + npe.getMessage());
+            LogFile.ThreadSave().logError(" excepcio:" + npe.getMessage());
         }
     }
 }

@@ -45,7 +45,7 @@ public class LogFile extends LogAbstract {
     //Singleton
     private static Log log = null;
 
-    public static Log getInstance() {
+    public static Log ThreadSave() {
         if (log == null) createInstance();
         return log;
     }
